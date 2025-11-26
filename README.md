@@ -239,9 +239,10 @@ pip install spacy
 - [Teoría de Autómatas y Lenguajes Formales](https://en.wikipedia.org/wiki/Automata_theory)
 - [Procesamiento de Lenguaje Natural](https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales)
 
-## 👨‍💻 Autor
+## 👨‍💻 Autores
 
-Ricardo Méndez - UPQ Cuatrimestre 7
+Ricardo Méndez
+Emiliano Ledesma
 
 ## 📄 Licencia
 
