@@ -32,12 +32,12 @@ if resultado['valida']:
     
     try:
         # 1. Generar árbol sintáctico
-        print("\n1️⃣  Generando árbol sintáctico...")
+        print("\n1 Generando árbol sintáctico...")
         ruta_sintactico = visualizador.generar_arbol(resultado['doc'], oracion)
         print(f"✓ Árbol sintáctico generado: {ruta_sintactico}")
         
         # 2. Generar árbol de derivación
-        print("\n2️⃣  Generando árbol de derivación...")
+        print("\n2  Generando árbol de derivación...")
         arbol_derivacion = generador_derivacion.generar_arbol(resultado['doc'], resultado)
         ruta_derivacion = visualizador.generar_arbol_derivacion(arbol_derivacion, oracion)
         print(f"✓ Árbol de derivación generado: {ruta_derivacion}")
@@ -45,7 +45,7 @@ if resultado['valida']:
         # 3. Mostrar reglas aplicadas
         reglas = generador_derivacion.obtener_reglas_aplicadas(arbol_derivacion)
         if reglas:
-            print(f"\n📋 Reglas gramaticales aplicadas:")
+            print(f"\nReglas gramaticales aplicadas:")
             for i, regla in enumerate(reglas, 1):
                 print(f"   {i}. {regla}")
         
@@ -65,8 +65,8 @@ if resultado['valida']:
         print("\n✓ ¡Prueba completada exitosamente!")
         
     except Exception as e:
-        print(f"\n❌ Error: {e}")
+        print(f"\nError: {e}")
         import traceback
         traceback.print_exc()
 else:
-    print("\n❌ La oración no es válida, no se generarán los árboles.")
+    print("\n La oración no es válida, no se generarán los árboles.")

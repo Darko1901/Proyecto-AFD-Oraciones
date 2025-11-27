@@ -144,7 +144,7 @@ class AFDOraciones:
                 )
                 print(f"✓ Árbol sintáctico generado: {ruta_arbol_sintactico}")
             except Exception as e:
-                print(f"⚠️  Error al generar árbol sintáctico: {e}")
+                print(f"  Error al generar árbol sintáctico: {e}")
             
             # 2. Generar árbol de derivación
             try:
@@ -161,12 +161,12 @@ class AFDOraciones:
                 # Mostrar reglas aplicadas
                 reglas = self.generador_derivacion.obtener_reglas_aplicadas(arbol_derivacion)
                 if reglas:
-                    print(f"\n📋 Reglas gramaticales aplicadas:")
+                    print(f"\nReglas gramaticales aplicadas:")
                     for i, regla in enumerate(reglas, 1):
                         print(f"   {i}. {regla}")
                 
             except Exception as e:
-                print(f"⚠️  Error al generar árbol de derivación: {e}")
+                print(f"Error al generar árbol de derivación: {e}")
                 import traceback
                 traceback.print_exc()
         
@@ -214,11 +214,11 @@ def main():
         oracion = input("\nOración: ").strip()
         
         if oracion.lower() in ['salir', 'exit', 'quit']:
-            print("\n¡Hasta luego! 👋\n")
+            print("\n¡Hasta luego! \n")
             break
         
         if not oracion:
-            print("\n⚠️  Por favor ingresa una oración válida.")
+            print("\n Por favor ingresa una oración válida.")
             continue
         
         # Procesar la oración
@@ -233,13 +233,13 @@ def main():
             if resultado.get('ruta_arbol_sintactico'):
                 respuesta = input("\n¿Deseas abrir el árbol sintáctico? (s/n): ").strip().lower()
                 if respuesta == 's':
-                    print("📊 Abriendo árbol sintáctico...")
+                    print(" Abriendo árbol sintáctico...")
                     afd.visualizador.abrir_imagen(resultado['ruta_arbol_sintactico'])
             
             if resultado.get('ruta_arbol_derivacion'):
                 respuesta = input("\n¿Deseas abrir el árbol de derivación? (s/n): ").strip().lower()
                 if respuesta == 's':
-                    print("🌳 Abriendo árbol de derivación...")
+                    print(" Abriendo árbol de derivación...")
                     afd.visualizador.abrir_imagen(resultado['ruta_arbol_derivacion'])
         
         # Preguntar si desea ver análisis detallado
@@ -254,7 +254,7 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\n\n¡Programa interrumpido por el usuario! 👋\n")
+        print("\n\n¡Programa interrumpido por el usuario!\n")
     except Exception as e:
-        print(f"\n❌ Error: {e}\n")
+        print(f"\n Error: {e}\n")
 

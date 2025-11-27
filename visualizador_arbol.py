@@ -4,6 +4,8 @@ Módulo para generar representaciones gráficas de árboles sintácticos
 usando matplotlib y networkx.
 """
 
+import matplotlib
+matplotlib.use('Agg')  # Use non-interactive backend
 import matplotlib.pyplot as plt
 import networkx as nx
 from matplotlib.patches import FancyBboxPatch
@@ -256,9 +258,9 @@ class VisualizadorArbol:
             elif sistema == 'Windows':
                 os.startfile(ruta_archivo)
             else:
-                print(f"⚠️  No se pudo abrir automáticamente. Archivo guardado en: {ruta_archivo}")
+                print(f" No se pudo abrir automáticamente. Archivo guardado en: {ruta_archivo}")
         except Exception as e:
-            print(f"⚠️  Error al abrir imagen: {e}")
+            print(f" Error al abrir imagen: {e}")
             print(f"   Archivo guardado en: {ruta_archivo}")
     
     def generar_arbol_derivacion(self, nodo_raiz, oracion: str) -> str:

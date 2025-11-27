@@ -74,6 +74,6 @@ if __name__ == "__main__":
     try:
         test_oraciones()
     except Exception as e:
-        print(f"\n❌ Error durante las pruebas: {e}\n")
+        print(f"\nError durante las pruebas: {e}\n")
         import traceback
         traceback.print_exc()
