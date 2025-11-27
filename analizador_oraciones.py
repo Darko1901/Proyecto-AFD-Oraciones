@@ -18,7 +18,7 @@ class AnalizadorOraciones:
         try:
             self.nlp = spacy.load("es_core_news_sm")
         except OSError:
-            print("\n⚠️  ERROR: El modelo de español no está instalado.")
+            print("\n ERROR: El modelo de español no está instalado.")
             print("Por favor, ejecuta el siguiente comando:")
             print("    python -m spacy download es_core_news_sm\n")
             raise
