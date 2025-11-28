@@ -3,7 +3,7 @@
 
 ---
 
-## 📋 Índice
+## Índice
 
 1. [Descripción General](#-descripción-general)
 2. [Fundamentos Teóricos](#-fundamentos-teóricos)
@@ -17,25 +17,25 @@
 
 ---
 
-## 📝 Descripción General
+##  Descripción General
 
 ### Objetivo del Proyecto
 
 Este proyecto implementa un **Analizador de Lenguaje Natural Simple** basado en la **Teoría de Autómatas y Lenguajes Formales**. El sistema es capaz de:
 
-- ✅ Identificar si una oración cumple con una estructura gramatical definida
-- ✅ Reconocer componentes: **Sujeto + Verbo + Objeto/Complemento**
-- ✅ Construir árboles de derivación gramatical
-- ✅ Validar oraciones mediante un Autómata Finito Determinista (AFD)
+- Identificar si una oración cumple con una estructura gramatical definida
+- Reconocer componentes: **Sujeto + Verbo + Objeto/Complemento**
+- Construir árboles de derivación gramatical
+- Validar oraciones mediante un Autómata Finito Determinista (AFD)
 
 ### Características Principales
 
-- 🚀 **Sin dependencias externas** (solo Python estándar)
-- 📚 **Alfabeto limitado** (vocabulario predefinido de ~30 palabras)
-- 🤖 **AFD explícito** con tabla de transiciones clara
-- 🌳 **Árboles de derivación** en formato ASCII
-- 📊 **Análisis paso a paso** del proceso de validación
-- 💡 **Código educativo** (~370 líneas, fácil de entender)
+- **Sin dependencias externas** (solo Python estándar)
+- **Alfabeto limitado** (vocabulario predefinido de ~30 palabras)
+- **AFD explícito** con tabla de transiciones clara
+- **Árboles de derivación** en formato ASCII
+- **Análisis paso a paso** del proceso de validación
+- **Código educativo** (~370 líneas, fácil de entender)
 
 ### ¿Por qué una Versión Simplificada?
 
@@ -51,7 +51,7 @@ Esta versión prioriza la **claridad conceptual** sobre la robustez:
 
 ---
 
-## 🎓 Fundamentos Teóricos
+## Fundamentos Teóricos
 
 ### 1. Lenguajes Formales
 
@@ -179,7 +179,7 @@ DET N V N → el gato come pescado (sustitución terminal)
 
 ---
 
-## 🏗️ Arquitectura del Sistema
+## Arquitectura del Sistema
 
 ### Diagrama de Componentes
 
@@ -188,27 +188,27 @@ DET N V N → el gato come pescado (sustitución terminal)
 │                  version_simplificada.py            │
 ├─────────────────────────────────────────────────────┤
 │                                                     │
-│  ┌─────────────────────────────────────────────┐  │
-│  │         AnalizadorSimple                     │  │
-│  │  - Diccionarios de vocabulario               │  │
-│  │  - Análisis léxico (tokenización)            │  │
-│  │  - Identificación de componentes             │  │
-│  └─────────────────────────────────────────────┘  │
-│                      ↓                             │
-│  ┌─────────────────────────────────────────────┐  │
-│  │            AFDSimple                         │  │
-│  │  - Definición formal del autómata            │  │
-│  │  - Tabla de transiciones                     │  │
-│  │  - Validación de cadenas                     │  │
-│  │  - Generación de árboles de derivación       │  │
-│  └─────────────────────────────────────────────┘  │
-│                      ↓                             │
-│  ┌─────────────────────────────────────────────┐  │
-│  │         Interfaz de Usuario                  │  │
-│  │  - Entrada de oraciones                      │  │
-│  │  - Visualización de resultados               │  │
-│  │  - Árboles ASCII                             │  │
-│  └─────────────────────────────────────────────┘  │
+│  ┌─────────────────────────────────────────────┐    │
+│  │         AnalizadorSimple                    │    │
+│  │  - Diccionarios de vocabulario              │    │
+│  │  - Análisis léxico (tokenización)           │    │
+│  │  - Identificación de componentes            │    │
+│  └─────────────────────────────────────────────┘    │
+│                      ↓                              │
+│  ┌─────────────────────────────────────────────┐    │
+│  │            AFDSimple                        │    │
+│  │  - Definición formal del autómata           │    │
+│  │  - Tabla de transiciones                    │    │
+│  │  - Validación de cadenas                    │    │
+│  │  - Generación de árboles de derivación      │    │
+│  └─────────────────────────────────────────────┘    │
+│                      ↓                              │
+│  ┌─────────────────────────────────────────────┐    │
+│  │         Interfaz de Usuario                 │    │
+│  │  - Entrada de oraciones                     │    │
+│  │  - Visualización de resultados              │    │
+│  │  - Árboles ASCII                            │    │
+│  └─────────────────────────────────────────────┘    │
 │                                                     │
 └─────────────────────────────────────────────────────┘
 ```
@@ -266,7 +266,7 @@ DET N V N → el gato come pescado (sustitución terminal)
 
 ---
 
-## 📚 Gramática Formal
+## Gramática Formal
 
 ### Definición Completa
 
@@ -343,7 +343,7 @@ Total: 45 palabras en el vocabulario
 
 ---
 
-## 🤖 Definición del Autómata
+## Definición del Autómata
 
 ### Especificación Formal del AFD
 
@@ -436,14 +436,14 @@ class AFDSimple:
 
 ### Propiedades del Autómata
 
-1. **Determinismo**: ✅ Para cada par (estado, símbolo) hay exactamente una transición
-2. **Completitud**: ✅ Todas las entradas no definidas van a qr (trampa)
-3. **Minimalidad**: ✅ No hay estados equivalentes que se puedan fusionar
-4. **Conexión**: ✅ Todos los estados son alcanzables desde q0
+1. **Determinismo**:  Para cada par (estado, símbolo) hay exactamente una transición
+2. **Completitud**:  Todas las entradas no definidas van a qr (trampa)
+3. **Minimalidad**:  No hay estados equivalentes que se puedan fusionar
+4. **Conexión**:  Todos los estados son alcanzables desde q0
 
 ---
 
-## 📦 Instalación y Uso
+##  Instalación y Uso
 
 ### Requisitos Previos
 
@@ -519,7 +519,7 @@ Oración: _
 
 ---
 
-## 🧪 Ejemplos y Casos de Prueba
+##  Ejemplos y Casos de Prueba
 
 ### Caso 1: Oración Válida Simple
 
@@ -746,7 +746,7 @@ Palabras reconocidas:
 
 ---
 
-## 📊 Análisis de Complejidad
+## Análisis de Complejidad
 
 ### Complejidad Temporal
 
@@ -780,7 +780,7 @@ def _imprimir_arbol_derivacion(self, analisis):
 
 **Complejidad:** `O(n)`
 
-**Complejidad Total:** `O(n) + O(1) + O(n) = O(n)` **lineal** ✅
+**Complejidad Total:** `O(n) + O(1) + O(n) = O(n)` **lineal** 
 
 ---
 
@@ -805,7 +805,7 @@ resultado = {
 
 **Espacio:** `O(n)` para almacenar la estructura
 
-**Complejidad Espacial Total:** `O(n)` **lineal** ✅
+**Complejidad Espacial Total:** `O(n)` **lineal** 
 
 ---
 
@@ -904,7 +904,7 @@ resultado = {
 
 ---
 
-## 🔬 Extensiones Posibles
+## Extensiones Posibles
 
 ### 1. Añadir Más Categorías Gramaticales
 
@@ -945,7 +945,7 @@ if palabra not in vocabulario:
 
 ---
 
-## 📚 Referencias
+##  Referencias
 
 ### Libros Fundamentales
 
@@ -988,15 +988,15 @@ if palabra not in vocabulario:
 
 ---
 
-## 🎯 Conclusiones
+##  Conclusiones
 
 ### Logros del Proyecto
 
-✅ **Implementación correcta** de un AFD funcional
-✅ **Gramática independiente del contexto** bien definida
-✅ **Árboles de derivación** generados correctamente
-✅ **Análisis léxico** basado en vocabulario limitado
-✅ **Código educativo** claro y comprensible
+**Implementación correcta** de un AFD funcional
+ **Gramática independiente del contexto** bien definida
+ **Árboles de derivación** generados correctamente
+ **Análisis léxico** basado en vocabulario limitado
+ **Código educativo** claro y comprensible
 
 ### Aplicación de Conceptos Teóricos
 
@@ -1019,35 +1019,19 @@ Este proyecto demuestra exitosamente:
 
 ### Valor Educativo
 
-- 📖 **Claridad conceptual** sobre complejidad técnica
-- 🎓 **Enfoque pedagógico** en teoría de computación
-- 💡 **Código legible** para aprendizaje
-- 🔬 **Base sólida** para extensiones futuras
+-  **Claridad conceptual** sobre complejidad técnica
+-  **Enfoque pedagógico** en teoría de computación
+-  **Código legible** para aprendizaje
+-  **Base sólida** para extensiones futuras
 
 ---
 
-## 👨‍💻 Autores
+##  Autores
 
 **Ricardo Méndez**
 **Emiliano Ledesma**
-
----
-
-## 📄 Licencia
-
-Este proyecto es de **uso académico y educativo**.
-
-Desarrollado como parte del curso de Teoría de Autómatas y Lenguajes Formales.
-
----
-
-## 📞 Soporte
-
-Para preguntas o sugerencias sobre este proyecto:
-
-- Revisar la documentación completa
-- Consultar los ejemplos de casos de prueba
-- Analizar el código fuente comentado
+**Diego Jiménez**
+**Abraham Velázquez**
 
 ---
 
