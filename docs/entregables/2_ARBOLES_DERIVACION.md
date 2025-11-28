@@ -1,7 +1,7 @@
 # ENTREGABLE 2: Árboles de Derivación
 
 **Proyecto:** Analizador de Lenguaje Natural Simple
-**Autores:** Ricardo Méndez, Emiliano Ledesma
+**Autores:** Ricardo Méndez, Emiliano Ledesma, Diego Jiménez, Abraham Velázquez
 **Fecha:** Noviembre 2024
 
 ---

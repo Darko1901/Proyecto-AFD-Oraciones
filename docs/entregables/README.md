@@ -1,7 +1,7 @@
 # Entregables del Proyecto - Analizador de Oraciones
 
 **Proyecto:** Analizador de Lenguaje Natural Simple
-**Autores:** Ricardo Méndez, Emiliano Ledesma
+**Autores:** Ricardo Méndez, Emiliano Ledesma, Diego Jiménez, Abraham Velázquez
 **Fecha:** Noviembre 2024
 
 ---

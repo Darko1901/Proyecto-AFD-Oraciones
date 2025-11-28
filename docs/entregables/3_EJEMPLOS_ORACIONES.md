@@ -1,7 +1,7 @@
 # ENTREGABLE 3: Ejemplos de Oraciones Válidas e Inválidas
 
 **Proyecto:** Analizador de Lenguaje Natural Simple
-**Autores:** Ricardo Méndez, Emiliano Ledesma
+**Autores:** Ricardo Méndez, Emiliano Ledesma, Diego Jiménez, Abraham Velázquez
 **Fecha:** Noviembre 2024
 
 ---
