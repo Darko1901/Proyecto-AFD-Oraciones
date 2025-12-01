@@ -3,16 +3,8 @@ VERSIÓN SIMPLIFICADA DEL ANALIZADOR DE ORACIONES
 Proyecto 5: Analizador de lenguaje natural simple
 
 Este archivo es una versión alternativa más simple que usa regex
-en lugar de spaCy. NO reemplaza tu código actual, solo es un ejemplo
-de comparación.
+en lugar de spaCy. 
 
-Características:
-- ~200 líneas vs ~1000+ de la versión completa
-- Sin dependencias externas (no requiere spaCy)
-- Alfabeto limitado (vocabulario predefinido)
-- AFD explícito con tabla de transiciones
-- Árbol de derivación en formato ASCII
-- Gramática formal simple
 """
 
 import re
