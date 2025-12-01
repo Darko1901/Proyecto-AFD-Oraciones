@@ -762,7 +762,7 @@ analizador.sustantivos = ['árbol']  # Pierde palabras anteriores
 
 **Versión:** 1.0
 **Fecha:** Noviembre 2024
-**Autores:** Ricardo Méndez, Emiliano Ledesma
+**Autores:** Ricardo Méndez, Emiliano Ledesma, Diego Jiménez y Abraham Velázquez
 **Licencia:** Uso académico
 
 ---

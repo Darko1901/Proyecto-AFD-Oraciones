@@ -301,7 +301,7 @@ Todos los entregables siguen:
 
 ## Contacto y Créditos
 
-**Autores:** Ricardo Méndez, Emiliano Ledesma
+**Autores:** Ricardo Méndez, Emiliano Ledesma, Diego Jiménez, Abraham Velázquez
 **Proyecto:** Analizador de Lenguaje Natural Simple
 **Curso:** Teoría de Autómatas y Lenguajes Formales
 **Fecha:** Noviembre 2024
